@@ -170,7 +170,7 @@ cover:
   - platform: template
     device_class: garage
     name: "Garage Door"
-    lambda: "return id(contact).state ? COVER_OPEN : COVER_CLOSED;"
+    lambda: "return id(contact).state ? COVER_CLOSED : COVER_OPEN;"
     open_action:
       then:
        - if:
